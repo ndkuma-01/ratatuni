@@ -1,0 +1,27 @@
+[package]
+name = "ratatuni"
+
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rusty_ytdl = "0.6.6"
+tokio = {version = "1.35.1", features = ["rt-multi-thread", "macros"]}
+jpeg-decoder = "0.3.0"
+id3-image = "0.3.1"
+id3 = "1.12.0"
+reqwest = {version = "0.11.23", features =["blocking"]}
+anyhow= "1.0.79"
+termimage = "1.2.1"
+indicatif = "0.17.7"
+log = "0.4.20"
+rodio = "0.17.3"
+lofty = "0.17.1"
+ratatui = "0.25.0"
+sqlite = "0.32.0"
+crossterm = "0.27.0"
+arboard = "3.3.0"
+homedir = "0.2.1"
+image = "0.24.8"
