@@ -1,4 +1,4 @@
-# ratatuni
+# ratatuni (WIP CURRENTLY NOT DONE AND POLISHED!)
 An advanced music player coded in Rust using ratatui for displaying to the terminal!
 
 
