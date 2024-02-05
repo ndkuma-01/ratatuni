@@ -19,21 +19,22 @@ measures need to be taken so that if something were to be deleted or corrupted a
 there should be a way to create playlists (which would be editing the SQLite DB) and the SQLite DB should go ahead and take care of keeping track of artists and their songs
 
 
-
-things figured out:
-
-- how to play songs basically
-- how to download videos from YouTube
-- how to add tags to a mp3 file
-- how to get the thumbnail of a URL link 
--  figure out how to do the ascii art stuff (or color stuff)
-
-
-things need to be figured out:
-- figure out how to play/pause and such using crate rodio::sink
-- figure out how to use ratatui
-- figure out ratatui app layout (intro window, settings window, add vimkeybindings (or something along those lines), player, a queue system, a youtube downloading section, create playlist section, and such)
-- figure out how to manage songs, playlists, and artists through SQlite
+things to do:
+-create error handling popup box (similar to showMessageDialog from Java swing) 
+- refactor codebase to make it easier to work in. Delete unused files, make it so that the app is a universal container for grabbing the app data and config. Maybe make a config struct that holds the colors and the directories of the database and such. Go through current code and clean it up. Use better and more efficient coding practices. Implement better error handling using custom error popup box
+- figure out partial rendering so the thumbnail rendering is less expensive, potentially figure out a better default thing, maybe a gif of a vinyl being played could be cool
+- refactor keybindings and mode enums
+- change audio backend from rodio to kittyaudio
+- implement seeking and volume support (maybe a volume slider but idk)
+- figure out scroll bars and see if a gradient progress bar is possible
+- figure out themes and UI
+- change how the viewport for songs is displayed (think of a method that will make search queries easier)
+- add the ability to search through songs and playlists and compose them ranked in the viewfinder
+- make it so that the overall music folder will sort its music in chronological order (with the newest added ones at the top), which means that the date added must also be added to the database (make sure to account for different ways of ranking playlists. For example a user can create a playlist with a custom order). 
+- Make it so that the queue can be randomized and such
+- add a tab to create playlists
+- add a settings tab that allows for choosing the color scheme
+- 
 
 
 
